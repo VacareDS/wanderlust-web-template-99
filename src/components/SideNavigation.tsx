@@ -64,7 +64,7 @@ export const SideNavigation = () => {
       {/* Side Navigation */}
       <nav className={`fixed left-0 top-0 h-full z-40 transition-all duration-500 ${
         isOpen ? 'translate-x-0' : '-translate-x-full'
-      } md:translate-x-0 w-80 bg-gradient-earth shadow-vintage`}>
+      } md:translate-x-0 w-64 bg-gradient-earth shadow-vintage`}>
         
         {/* Background decorative pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -73,14 +73,14 @@ export const SideNavigation = () => {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-primary/30 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
         </div>
 
-        <div className="relative h-full flex flex-col p-8">
+        <div className="relative h-full flex flex-col p-6">
           {/* Logo */}
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-boho-rust rounded-xl flex items-center justify-center shadow-vintage">
-              <Leaf className="h-6 w-6 text-primary-foreground" />
+          <div className="flex items-center gap-2 mb-8">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-boho-rust rounded-lg flex items-center justify-center shadow-vintage">
+              <Leaf className="h-5 w-5 text-primary-foreground" />
             </div>
             <div>
-              <span className="text-2xl font-display font-bold text-foreground">
+              <span className="text-lg font-display font-bold text-foreground">
                 {navData.brand.name}
               </span>
               <div className="w-full h-0.5 bg-gradient-to-r from-primary to-transparent mt-1"></div>
@@ -88,7 +88,7 @@ export const SideNavigation = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex-1 space-y-3">
+          <div className="flex-1 space-y-2">
             {navData.nav_items.map((item, index) => {
               const IconComponent = iconMap[item.id as keyof typeof iconMap] || Heart;
               
@@ -96,15 +96,15 @@ export const SideNavigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="w-full text-left p-4 rounded-xl transition-all duration-400 hover:bg-card/50 hover:shadow-soft group animate-fade-in border-2 border-transparent hover:border-boho-rust/30"
+                  className="w-full text-left p-3 rounded-lg transition-all duration-400 hover:bg-card/50 hover:shadow-soft group animate-fade-in border-2 border-transparent hover:border-boho-rust/30"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent className="h-5 w-5 text-primary" />
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <IconComponent className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <span className="text-lg font-display font-medium text-foreground group-hover:text-primary transition-colors">
+                      <span className="text-sm font-display font-medium text-foreground group-hover:text-primary transition-colors">
                         {item.label}
                       </span>
                       <div className="w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-500 mt-1"></div>
@@ -116,21 +116,21 @@ export const SideNavigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="mt-8">
+          <div className="mt-6">
             <Button 
               variant="cta" 
-              size="lg"
+              size="default"
               onClick={handleWhatsAppClick}
-              className="w-full shadow-vintage group"
+              className="w-full shadow-vintage group text-sm"
             >
-              <MessageCircle className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+              <MessageCircle className="mr-2 h-4 w-4 group-hover:animate-bounce" />
               <span className="font-display">{navData.cta_button.text}</span>
             </Button>
             
             {/* Decorative element */}
-            <div className="mt-4 text-center">
-              <div className="inline-block px-4 py-2 bg-boho-cream/50 rounded-full border border-boho-rust/30">
-                <span className="text-sm font-body text-muted-foreground font-medium">Authentic · Cozy · Artistic</span>
+            <div className="mt-3 text-center">
+              <div className="inline-block px-3 py-1 bg-boho-cream/50 rounded-full border border-boho-rust/30">
+                <span className="text-xs font-body text-muted-foreground font-medium">Authentic · Cozy</span>
               </div>
             </div>
           </div>

@@ -25,28 +25,39 @@ export const FinalCTASection = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-3xl mx-auto animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-shadow">
+        <div className="max-w-4xl mx-auto animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-shadow font-display">
             {final_cta.title}
           </h2>
           
-          <p className="text-xl md:text-2xl mb-8 opacity-95 text-shadow">
+          <p className="text-xl md:text-2xl mb-12 opacity-95 text-shadow leading-relaxed">
             {final_cta.description}
           </p>
 
-          <Button 
-            variant="outline" 
-            size="lg"
-            onClick={handleBookingClick}
-            className="group px-8 py-4 text-lg font-semibold bg-white text-primary hover:bg-white/90 border-0 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            {final_cta.button.text}
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          {/* Dual CTA buttons with better spacing */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={handleBookingClick}
+              className="group px-10 py-5 text-lg font-semibold bg-white text-primary hover:bg-white/90 border-0 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-display min-w-[200px]"
+            >
+              <MessageCircle className="mr-3 h-5 w-5" />
+              {final_cta.button.text}
+              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            
+            <Button 
+              variant="boho" 
+              size="lg"
+              className="px-10 py-5 text-lg font-display bg-boho-cream/90 text-boho-earth border-2 border-white/40 hover:bg-white/20 hover:border-white/60 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 min-w-[200px]"
+            >
+              Check Availability
+            </Button>
+          </div>
 
           {/* Decorative elements */}
-          <div className="flex justify-center items-center gap-8 mt-12 opacity-60">
+          <div className="flex justify-center items-center gap-8 mt-16 opacity-60">
             <div className="w-12 h-px bg-white"></div>
             <div className="w-3 h-3 bg-white rounded-full"></div>
             <div className="w-12 h-px bg-white"></div>

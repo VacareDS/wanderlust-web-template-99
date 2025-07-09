@@ -167,21 +167,21 @@ export const BohoHeroSection = () => {
                 </div>
               </div>
 
-              {/* Overlapping polaroid frames */}
-              <div className="absolute -top-6 -right-6 w-32 h-40 polaroid-frame bg-white transform rotate-12 animate-float shadow-vintage">
+              {/* Overlapping polaroid frames - adjusted positioning */}
+              <div className="absolute -top-4 -right-4 w-28 h-36 polaroid-frame bg-white transform rotate-12 animate-float shadow-vintage hidden lg:block">
                 <img
                   src={gallery1}
                   alt="Cozy atmosphere"
-                  className="w-full h-24 object-cover rounded-sm"
+                  className="w-full h-20 object-cover rounded-sm"
                 />
                 <p className="text-xs font-display text-center mt-2 text-boho-earth">Cozy vibes ✨</p>
               </div>
 
-              <div className="absolute -bottom-8 -left-8 w-36 h-44 polaroid-frame bg-white transform -rotate-6 animate-float shadow-vintage" style={{ animationDelay: '1s' }}>
+              <div className="absolute -bottom-6 -left-6 w-32 h-40 polaroid-frame bg-white transform -rotate-6 animate-float shadow-vintage hidden lg:block" style={{ animationDelay: '1s' }}>
                 <img
                   src={gallery2}
                   alt="Social spaces"
-                  className="w-full h-28 object-cover rounded-sm"
+                  className="w-full h-24 object-cover rounded-sm"
                 />
                 <p className="text-xs font-display text-center mt-2 text-boho-earth">Meet fellow travelers</p>
               </div>
@@ -195,7 +195,7 @@ export const BohoHeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator with boho styling */}
+      {/* Scroll indicator with boho styling - positioned to avoid overlap */}
       <button 
         onClick={() => {
           const nextSection = document.querySelector('section:nth-of-type(2)');
@@ -203,10 +203,10 @@ export const BohoHeroSection = () => {
             nextSection.scrollIntoView({ behavior: 'smooth' });
           }
         }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-110 transition-transform cursor-pointer group"
+        className="absolute bottom-8 right-8 md:left-1/2 md:transform md:-translate-x-1/2 animate-bounce hover:scale-110 transition-transform cursor-pointer group z-20"
         aria-label="Scroll to next section"
       >
-        <div className="w-8 h-12 border-2 border-boho-rust/60 rounded-full flex justify-center group-hover:border-primary transition-colors bg-boho-cream/50">
+        <div className="w-8 h-12 border-2 border-boho-rust/60 rounded-full flex justify-center group-hover:border-primary transition-colors bg-boho-cream/80 backdrop-blur-sm">
           <div className="w-1.5 h-4 bg-gradient-to-b from-primary to-boho-rust rounded-full mt-2 animate-pulse group-hover:scale-110 transition-transform"></div>
         </div>
         <div className="mt-2 text-center">

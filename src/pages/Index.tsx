@@ -35,7 +35,7 @@ const Index = () => {
       <SideNavigation />
       
       {/* Main content with left margin for side nav */}
-      <main className="md:ml-80 transition-all duration-500">
+      <main className="md:ml-64 transition-all duration-500">
         {/* Hero Section with split-screen design */}
         <div id="home">
           <BohoHeroSection />
@@ -69,7 +69,7 @@ const Index = () => {
         <FinalCTASection />
       </main>
 
-      <div className="md:ml-80">
+      <div className="md:ml-64">
         <Footer />
       </div>
       
