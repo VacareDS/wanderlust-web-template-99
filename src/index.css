@@ -2,106 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-/* HostelLandingTemplateV1 Design System */
-/* Hostel-focused color palette for backpackers - warm, friendly, and trustworthy */
+/* HostelLandingTemplateV2 - Rustic Boho Chic Design System */
+/* Warm earthy tones with natural textures for an artistic, cozy atmosphere */
 
 @layer base {
   :root {
-    /* Core backgrounds and foregrounds */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    /* Core backgrounds and foregrounds - Warm cream base */
+    --background: 35 25% 97%;
+    --foreground: 25 35% 15%;
 
-    /* Card components */
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    /* Card components - Soft beige */
+    --card: 30 20% 95%;
+    --card-foreground: 25 35% 15%;
 
     /* Popover components */
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 30 20% 95%;
+    --popover-foreground: 25 35% 15%;
 
-    /* Primary brand colors - Warm coral for energy and adventure */
-    --primary: 14 90% 58%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 14 85% 70%;
+    /* Primary brand colors - Rich terracotta */
+    --primary: 15 75% 55%;
+    --primary-foreground: 30 20% 95%;
+    --primary-glow: 20 70% 70%;
 
-    /* Secondary colors - Deep teal for trust and reliability */
-    --secondary: 185 55% 25%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary colors - Warm ochre */
+    --secondary: 35 45% 45%;
+    --secondary-foreground: 30 20% 95%;
 
-    /* Muted colors for subtle elements */
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 46%;
+    /* Muted colors for subtle elements - Natural beige */
+    --muted: 35 15% 88%;
+    --muted-foreground: 30 25% 45%;
 
-    /* Accent colors - Bright blue for highlights and CTAs */
-    --accent: 200 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent colors - Dusty rose for highlights */
+    --accent: 345 35% 65%;
+    --accent-foreground: 30 20% 95%;
 
-    /* Hostel-specific colors */
-    --hostel-warm: 25 85% 60%;      /* Warm yellow for highlights */
-    --hostel-nature: 140 40% 35%;   /* Nature green for location/outdoor */
-    --hostel-cozy: 30 50% 85%;      /* Soft beige for comfort */
+    /* Boho-specific colors */
+    --boho-rust: 15 65% 50%;         /* Deep rust for accents */
+    --boho-sage: 95 25% 55%;         /* Sage green for nature elements */
+    --boho-cream: 40 30% 92%;        /* Warm cream for comfort */
+    --boho-earth: 25 40% 35%;        /* Deep earth brown */
 
     /* Status colors */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 30 20% 95%;
 
     /* Form elements */
-    --border: 210 15% 90%;
-    --input: 210 15% 95%;
-    --ring: 14 90% 58%;
+    --border: 30 15% 80%;
+    --input: 35 20% 90%;
+    --ring: 15 75% 55%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 30 20% 95%;
+    --sidebar-foreground: 25 35% 15%;
+    --sidebar-primary: 15 75% 55%;
+    --sidebar-primary-foreground: 30 20% 95%;
+    --sidebar-accent: 35 15% 88%;
+    --sidebar-accent-foreground: 25 35% 15%;
+    --sidebar-border: 30 15% 80%;
+    --sidebar-ring: 15 75% 55%;
 
-    /* Gradients for modern effects */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--accent) / 0.8));
-    --gradient-warm: linear-gradient(45deg, hsl(var(--hostel-warm)), hsl(var(--primary)));
+    /* Gradients for rustic effects */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--boho-rust)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.6));
+    --gradient-warm: linear-gradient(45deg, hsl(var(--boho-cream)), hsl(var(--primary)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--boho-cream)), hsl(var(--muted)));
 
-    /* Shadows with brand colors */
-    --shadow-soft: 0 4px 12px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 8px 25px hsl(var(--primary) / 0.15);
-    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    /* Shadows with warm tones */
+    --shadow-soft: 0 4px 12px hsl(var(--boho-earth) / 0.15);
+    --shadow-medium: 0 8px 25px hsl(var(--boho-earth) / 0.2);
+    --shadow-vintage: 0 6px 20px hsl(var(--primary) / 0.2);
+    --shadow-polaroid: 0 2px 8px hsl(var(--boho-earth) / 0.3), 0 8px 24px hsl(var(--boho-earth) / 0.15);
 
-    /* Animations and transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.2s ease-out;
+    /* Animations and transitions - Softer, more organic */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-vintage: all 0.6s ease-in-out;
+
+    /* Typography scales for rustic feel */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
   }
 
   .dark {
-    /* Dark mode variations for hostel theme */
-    --background: 215 25% 8%;
-    --foreground: 0 0% 95%;
-    --card: 215 25% 10%;
-    --card-foreground: 0 0% 95%;
-    --primary: 14 85% 65%;
-    --secondary: 185 45% 35%;
-    --muted: 215 20% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 215 15% 20%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.7));
+    /* Dark mode variations for boho theme */
+    --background: 25 40% 8%;
+    --foreground: 35 25% 95%;
+    --card: 25 35% 12%;
+    --card-foreground: 35 25% 95%;
+    --primary: 15 70% 60%;
+    --secondary: 35 40% 50%;
+    --muted: 25 30% 18%;
+    --muted-foreground: 30 20% 70%;
+    --accent: 345 30% 60%;
+    --accent-foreground: 35 25% 95%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 35 25% 95%;
+    --border: 25 25% 25%;
+    --input: 25 30% 20%;
+    --ring: 15 70% 60%;
+    --boho-rust: 15 60% 45%;
+    --boho-sage: 95 20% 50%;
+    --boho-cream: 40 25% 85%;
+    --boho-earth: 25 35% 30%;
+    --sidebar-background: 25 35% 12%;
+    --sidebar-foreground: 35 25% 95%;
+    --sidebar-primary: 15 70% 60%;
+    --sidebar-primary-foreground: 35 25% 95%;
+    --sidebar-accent: 25 30% 18%;
+    --sidebar-accent-foreground: 35 25% 95%;
+    --sidebar-border: 25 25% 25%;
+    --sidebar-ring: 15 70% 60%;
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.7), hsl(var(--accent) / 0.6));
   }
 }
 
@@ -115,9 +127,15 @@
     scroll-behavior: smooth;
   }
 
-  /* Custom utility classes for hostel theme */
-  .hover-lift {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  /* Custom utility classes for boho theme */
+  .hover-lift-gentle {
+    transition: var(--transition-smooth);
+    @apply hover:scale-[1.02] hover:-translate-y-1;
+    filter: drop-shadow(var(--shadow-soft));
+  }
+
+  .hover-lift-gentle:hover {
+    filter: drop-shadow(var(--shadow-vintage));
   }
 
   .gradient-primary {
@@ -128,38 +146,135 @@
     background: var(--gradient-hero);
   }
 
+  .gradient-earth {
+    background: var(--gradient-earth);
+  }
+
   .text-shadow {
-    text-shadow: 0 2px 4px hsl(var(--foreground) / 0.1);
+    text-shadow: 0 2px 4px hsl(var(--boho-earth) / 0.2);
+  }
+
+  .text-shadow-vintage {
+    text-shadow: 2px 2px 4px hsl(var(--boho-earth) / 0.3), 0 0 8px hsl(var(--primary) / 0.1);
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out;
+    animation: fadeInBoho 0.8s ease-out;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out;
+    animation: slideUpBoho 1s ease-out;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
   }
 
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
+  .polaroid-frame {
+    @apply bg-white p-3 pb-6 rounded-sm rotate-1 shadow-lg;
+    filter: drop-shadow(var(--shadow-polaroid));
+    transition: var(--transition-bounce);
   }
 
-  /* Responsive typography */
+  .polaroid-frame:hover {
+    @apply rotate-0 scale-105;
+  }
+
+  .polaroid-frame:nth-child(even) {
+    @apply -rotate-2;
+  }
+
+  .scrapbook-element {
+    position: relative;
+  }
+
+  .scrapbook-element::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 15px;
+    background: linear-gradient(45deg, hsl(var(--accent)) 0%, hsl(var(--accent) / 0.7) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    opacity: 0.8;
+  }
+
+  @keyframes fadeInBoho {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px) scale(0.95);
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes slideUpBoho {
+    from { 
+      opacity: 0; 
+      transform: translateY(50px);
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Boho Typography */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
   .heading-hero {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+    @apply text-4xl md:text-5xl lg:text-7xl font-display font-bold leading-tight;
+    font-weight: 700;
   }
 
   .heading-section {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-4;
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-6;
+    font-weight: 600;
+  }
+
+  .heading-card {
+    @apply text-xl md:text-2xl font-display font-medium;
+    font-weight: 500;
   }
 
   .text-body {
-    @apply text-base md:text-lg leading-relaxed;
+    @apply text-base md:text-lg leading-relaxed font-body;
+  }
+
+  .text-caption {
+    @apply text-sm font-body text-muted-foreground;
+  }
+
+  /* Decorative Elements */
+  .brush-stroke {
+    position: relative;
+  }
+
+  .brush-stroke::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--accent) / 0.3) 20%, hsl(var(--accent) / 0.5) 50%, hsl(var(--accent) / 0.3) 80%, transparent 100%);
+    border-radius: 4px;
+    transform: skew(-12deg);
+  }
+
+  .vintage-border {
+    @apply border-2 border-dashed border-muted-foreground/30;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1h10v10H1z' fill='none' stroke='%23666' stroke-width='1' stroke-dasharray='1,1'/%3E%3C/svg%3E") 1;
   }
 }

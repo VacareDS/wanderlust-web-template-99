@@ -53,10 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				hostel: {
-					warm: 'hsl(var(--hostel-warm))',
-					nature: 'hsl(var(--hostel-nature))',
-					cozy: 'hsl(var(--hostel-cozy))'
+				boho: {
+					rust: 'hsl(var(--boho-rust))',
+					sage: 'hsl(var(--boho-sage))',
+					cream: 'hsl(var(--boho-cream))',
+					earth: 'hsl(var(--boho-earth))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -68,6 +69,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'display': ['Playfair Display', 'serif'],
+				'body': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

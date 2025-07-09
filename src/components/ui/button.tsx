@@ -18,9 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground hover:from-primary/90 hover:to-primary-glow/90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300",
+        cta: "bg-gradient-to-r from-primary to-boho-rust text-primary-foreground hover:from-primary/90 hover:to-boho-rust/90 shadow-vintage transform hover:scale-105 transition-all duration-500 font-display",
         whatsapp: "bg-green-500 text-white hover:bg-green-600 shadow-md hover:shadow-lg",
-        hostel: "bg-hostel-warm text-foreground hover:bg-hostel-warm/90 shadow-md hover:shadow-lg",
+        boho: "bg-boho-cream text-boho-earth border-2 border-boho-rust/30 hover:bg-boho-rust/10 hover:border-boho-rust hover-lift-gentle font-display",
+        vintage: "bg-accent/80 text-accent-foreground hover:bg-accent shadow-vintage hover:shadow-lg transform hover:-translate-y-1 transition-all duration-400 font-display",
+        rustic: "bg-gradient-to-br from-boho-sage to-secondary text-primary-foreground hover:from-boho-sage/90 hover:to-secondary/90 shadow-lg hover:shadow-vintage transition-all duration-400",
       },
       size: {
         default: "h-10 px-4 py-2",
