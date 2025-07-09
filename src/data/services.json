@@ -1,0 +1,66 @@
+{
+  "title": "Everything You Need for a Great Stay",
+  "description": "We've thought of everything to make your backpacking experience comfortable and memorable",
+  "services": [
+    {
+      "icon": "Wifi",
+      "name": "Free High-Speed WiFi",
+      "description": "Stay connected with reliable internet throughout the hostel, perfect for remote work or sharing your travel moments."
+    },
+    {
+      "icon": "ChefHat",
+      "name": "Fully Equipped Kitchen",
+      "description": "Save money by cooking your own meals. Full-size refrigerator, stove, microwave, and all utensils provided."
+    },
+    {
+      "icon": "Shirt",
+      "name": "Laundry Facilities",
+      "description": "Washing machines and dryers available 24/7. Detergent provided or purchase on-site."
+    },
+    {
+      "icon": "Luggage",
+      "name": "Luggage Storage",
+      "description": "Free storage for your bags before check-in or after check-out. Explore the city hands-free!"
+    },
+    {
+      "icon": "Car",
+      "name": "Airport Transfer",
+      "description": "Convenient shuttle service to and from the airport. Book in advance for discounted rates."
+    },
+    {
+      "icon": "Coffee",
+      "name": "Free Daily Breakfast",
+      "description": "Start your day right with continental breakfast including fresh fruit, coffee, tea, and local specialties."
+    },
+    {
+      "icon": "Shield",
+      "name": "24/7 Security",
+      "description": "Feel safe with round-the-clock security, keycard access, and individual lockers in every room."
+    },
+    {
+      "icon": "MapPin",
+      "name": "Local Tours & Info",
+      "description": "Our staff knows the city inside out. Get insider tips, maps, and book local tours at reception."
+    },
+    {
+      "icon": "Users",
+      "name": "Social Events",
+      "description": "Weekly pub crawls, walking tours, and social nights to help you meet fellow travelers."
+    },
+    {
+      "icon": "Gamepad2",
+      "name": "Games & Entertainment",
+      "description": "Common room with games, books, movies, and a place to relax and socialize with other guests."
+    },
+    {
+      "icon": "Bike",
+      "name": "Bike Rental",
+      "description": "Explore the city on two wheels! Affordable bike rentals with locks and maps included."
+    },
+    {
+      "icon": "Phone",
+      "name": "24/7 Reception",
+      "description": "Our friendly staff is always available to help with bookings, directions, or any questions you might have."
+    }
+  ]
+}

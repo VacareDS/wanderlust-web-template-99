@@ -1,0 +1,96 @@
+{
+  "title": "Choose Your Perfect Room",
+  "description": "All rooms include free WiFi, lockers, and access to common areas",
+  "from_text":"Desde:",
+  "rooms": [
+    {
+      "id": "dorm-6",
+      "name": "6-Bed Mixed Dorm",
+      "description": "Perfect for solo travelers looking to meet new people. Each bed has privacy curtains, power outlet, and reading light.",
+      "features": [
+        "Shared bathroom",
+        "Air conditioning", 
+        "Privacy curtains",
+        "Personal locker"
+      ],
+      "image": "/src/assets/room-dorm-6.jpg",
+      "price_from": "$25",
+      "cta": {
+        "text": "Book Now",
+        "link": "https://wa.me/1234567890?text=I%20want%20to%20book%20a%206-bed%20dorm"
+      },
+      "booking_button": {
+        "enabled": true,
+        "text": "Book on Booking.com",
+        "url": "https://www.booking.com/hotel/example-dorm-6"
+      }
+    },
+    {
+      "id": "dorm-4", 
+      "name": "4-Bed Mixed Dorm",
+      "description": "Smaller dorm with more space and privacy. Ideal for light sleepers or those who prefer a quieter environment.",
+      "features": [
+        "Ensuite bathroom",
+        "Air conditioning",
+        "Larger personal space", 
+        "Personal locker"
+      ],
+      "image": "/src/assets/room-dorm-4.jpg",
+      "price_from": "$35",
+      "cta": {
+        "text": "Book Now", 
+        "link": "https://wa.me/1234567890?text=I%20want%20to%20book%20a%204-bed%20dorm"
+      },
+      "booking_button": {
+        "enabled": true,
+        "text": "Book on Airbnb",
+        "url": "https://www.airbnb.com/rooms/example-dorm-4"
+      }
+    },
+    {
+      "id": "female-dorm",
+      "name": "Female-Only Dorm",
+      "description": "Safe and comfortable space exclusively for female travelers. Clean facilities and a supportive atmosphere.",
+      "features": [
+        "Women-only space",
+        "Ensuite bathroom",
+        "Hair dryer included",
+        "Extra security"
+      ],
+      "image": "/src/assets/room-female.jpg", 
+      "price_from": "$30",
+      "cta": {
+        "text": "Book Now",
+        "link": "https://wa.me/1234567890?text=I%20want%20to%20book%20a%20female%20dorm"
+      },
+      "booking_button": {
+        "enabled": false,
+        "text": "Book on Hostelworld",
+        "url": "https://www.hostelworld.com/hostel/example-female-dorm"
+      }
+    },
+    {
+      "id": "private",
+      "name": "Private Double Room",
+      "description": "Perfect for couples or friends who want privacy while staying in a hostel environment with access to common areas.",
+      "features": [
+        "Private bathroom", 
+        "Double bed",
+        "Air conditioning",
+        "Mini fridge"
+      ],
+      "image": "/src/assets/room-private.jpg",
+      "price_from": "$65", 
+      "cta": {
+        "text": "Book Now",
+        "link": "https://wa.me/1234567890?text=I%20want%20to%20book%20a%20private%20room"
+      },
+      "booking_button": {
+        "enabled": true,
+        "text": "Book on Booking.com",
+        "url": "https://www.booking.com/hotel/example-private-room"
+      }
+    }
+  ],
+  "booking_note": "All prices are per night. Contact us for weekly/monthly rates and group discounts."
+}

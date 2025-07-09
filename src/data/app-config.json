@@ -1,0 +1,72 @@
+{
+  "floating_whatsapp": {
+    "enabled": true,
+    "phone_number": "1234567890",
+    "message": "Hi! I want to book a room at your hostel",
+    "position": "bottom-right"
+  },
+  "additional_sections": [
+    {
+      "id": "house-rules",
+      "title": "Our House Rules",
+      "description": "Simple guidelines to ensure everyone has a great stay",
+      "icon": "ShieldCheck",
+      "items": [
+        "Check-in: 3:00 PM - 11:00 PM",
+        "Check-out: 8:00 AM - 11:00 AM", 
+        "Quiet hours: 10:00 PM - 8:00 AM",
+        "No smoking inside the building",
+        "Respect common areas and other guests",
+        "Clean up after yourself in kitchen"
+      ]
+    },
+    {
+      "id": "faqs",
+      "title": "Frequently Asked Questions",
+      "description": "Quick answers to common questions",
+      "icon": "HelpCircle",
+      "items": [
+        "Free WiFi throughout the building",
+        "Towels and linens included",
+        "24/7 reception and security",
+        "Luggage storage available",
+        "Laundry facilities on-site",
+        "Kitchen access until 11 PM"
+      ]
+    },
+    {
+      "id": "work-with-us",
+      "title": "Work with Us",
+      "description": "Join our team of travel enthusiasts",
+      "icon": "Users",
+      "items": [
+        "Reception staff positions",
+        "Cleaning and maintenance roles",
+        "Night shift opportunities",
+        "Multilingual staff preferred",
+        "Great for gap year travelers",
+        "Competitive rates + accommodation"
+      ]
+    },
+    {
+      "id": "about-owners",
+      "title": "About the Owners",
+      "description": "Meet the people behind your perfect hostel experience",
+      "icon": "Heart",
+      "items": [
+        "Former backpackers themselves",
+        "10+ years in hospitality",
+        "Passionate about travel",
+        "Local area experts",
+        "Always happy to give recommendations",
+        "Available for any questions"
+      ]
+    }
+  ],
+  "ui_labels": {
+    "follow_us_title": "Follow Us",
+    "follow_us_description": "Stay connected with our community",
+    "book_online_title": "Book Online",
+    "book_online_description": "Reserve through our partners"
+  }
+}

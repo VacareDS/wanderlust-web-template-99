@@ -1,0 +1,29 @@
+{
+  "brand": {
+    "name": "BackpackerHostel",
+    "description": "Your home away from home in the heart of the city. Join our community of travelers and create unforgettable memories."
+  },
+  "quick_links": {
+    "title": "Quick Links",
+    "links": [
+      { "label": "Rooms", "id": "rooms" },
+      { "label": "Services", "id": "services" },
+      { "label": "Location", "id": "location" },
+      { "label": "Contact", "id": "contact" }
+    ]
+  },
+  "contact_section": {
+    "title": "Contact"
+  },
+  "social_section": {
+    "title": "Follow Us",
+    "hashtag_text": "Share your hostel experience with #BackpackerHostel"
+  },
+  "bottom_bar": {
+    "copyright": "© 2024 BackpackerHostel. All rights reserved.",
+    "links": [
+      { "label": "Privacy Policy", "url": "#" },
+      { "label": "Terms of Service", "url": "#" }
+    ]
+  }
+}

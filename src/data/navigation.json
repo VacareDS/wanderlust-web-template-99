@@ -1,0 +1,16 @@
+{
+  "brand": {
+    "name": "BackpackerHostel"
+  },
+  "nav_items": [
+    { "label": "Home", "id": "home" },
+    { "label": "Rooms", "id": "rooms" },
+    { "label": "Services", "id": "services" },
+    { "label": "Location", "id": "location" },
+    { "label": "Contact", "id": "contact" }
+  ],
+  "cta_button": {
+    "text": "Book Now",
+    "link": "https://wa.me/1234567890?text=Hi!%20I%20want%20to%20book%20a%20room"
+  }
+}

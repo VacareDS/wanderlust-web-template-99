@@ -1,0 +1,89 @@
+{
+  "title": "Perfect Location in the Heart of the City",
+  "description": "Our hostel is strategically located to give you easy access to everything the city has to offer",
+  "address": {
+    "street": "123 Backpacker Street",
+    "city": "Adventure City",
+    "postal_code": "12345",
+    "country": "Traveler's Paradise"
+  },
+  "coordinates": {
+    "lat": 40.7128,
+    "lng": -74.0060
+  },
+  "nearby_attractions": [
+    {
+      "name": "City Center",
+      "distance": "5 min walk",
+      "icon": "Building"
+    },
+    {
+      "name": "Metro Station", 
+      "distance": "2 min walk",
+      "icon": "Train"
+    },
+    {
+      "name": "Main Shopping District",
+      "distance": "10 min walk", 
+      "icon": "ShoppingBag"
+    },
+    {
+      "name": "Historic Quarter",
+      "distance": "15 min walk",
+      "icon": "Castle"
+    },
+    {
+      "name": "Nightlife Area",
+      "distance": "8 min walk",
+      "icon": "Music"
+    },
+    {
+      "name": "Beach/Park",
+      "distance": "20 min by metro",
+      "icon": "Trees"
+    }
+  ],
+  "transportation": [
+    {
+      "type": "Airport",
+      "name": "City Airport",
+      "time": "45 min by shuttle",
+      "icon": "Plane"
+    },
+    {
+      "type": "Train Station",
+      "name": "Central Station", 
+      "time": "15 min by metro",
+      "icon": "Train"
+    },
+    {
+      "type": "Bus Terminal",
+      "name": "Main Bus Terminal",
+      "time": "20 min by metro",
+      "icon": "Bus"
+    }
+  ],
+  "directions": {
+    "from_airport": "Take the Airport Express to Central Station, then Metro Line 2 to Backpacker Square (3 stops). Our hostel is 2 minutes walk from the metro exit.",
+    "from_train_station": "Take Metro Line 2 direction City Center to Backpacker Square (5 stops). Exit at Backpacker Square and walk 2 minutes.",
+    "from_bus_terminal": "Take Metro Line 1 to Central Station, transfer to Line 2 direction City Center to Backpacker Square. 2 minutes walk from metro."
+  },
+  "google_maps": {
+    "enabled": true,
+    "embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-74.00601!3d40.7127837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2sBackpacker%20Hostel!5e0!3m2!1sen!2sus!4v1234567890"
+  },
+  "ui_labels": {
+    "interactive_map_title": "Interactive Map",
+    "map_coming_soon": "Map integration coming soon",
+    "our_address_title": "Our Address",
+    "whats_nearby_title": "What's Nearby", 
+    "all_attractions_title": "All Nearby Attractions",
+    "transportation_title": "Transportation",
+    "directions_title": "How to Get Here",
+    "direction_headers": {
+      "from_airport": "From Airport",
+      "from_train_station": "From Train Station",
+      "from_bus_terminal": "From Bus Terminal"
+    }
+  }
+}

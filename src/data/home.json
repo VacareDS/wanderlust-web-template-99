@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Your Adventure Starts Here",
+    "subtitle": "Discover the perfect hostel for backpackers in the heart of the city",
+    "description": "Clean rooms, friendly atmosphere, and unbeatable location. Book now and join our community of travelers from around the world.",
+    "cta": {
+      "text": "Book Now via WhatsApp",
+      "link": "https://wa.me/1234567890?text=Hi!%20I%20want%20to%20book%20a%20room",
+      "secondary": "Check Availability"
+    },
+    "featured_image": "/src/assets/hostel-hero.jpg"
+  },
+  "presentation": {
+    "title": "Why Choose Our Hostel?",
+    "description": "We're more than just a place to sleep – we're your gateway to authentic local experiences and lifelong connections.",
+    "highlights": [
+      {
+        "icon": "MapPin",
+        "title": "Prime Location",
+        "description": "5 minutes walk to city center and main attractions"
+      },
+      {
+        "icon": "Users",
+        "title": "Vibrant Community",
+        "description": "Meet fellow travelers from around the world"
+      },
+      {
+        "icon": "Shield",
+        "title": "Safe & Secure",
+        "description": "24/7 security and lockers for your valuables"
+      },
+      {
+        "icon": "Wifi",
+        "title": "Free WiFi",
+        "description": "High-speed internet throughout the hostel"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Take a Look Around",
+    "view_image_button":"Click para Ver",
+    "images": [
+      {
+        "src": "/src/assets/gallery-1.jpg",
+        "alt": "Common area with comfortable seating"
+      },
+      {
+        "src": "/src/assets/gallery-2.jpg", 
+        "alt": "Clean dormitory room"
+      },
+      {
+        "src": "/src/assets/gallery-3.jpg",
+        "alt": "Modern kitchen facilities"
+      },
+      {
+        "src": "/src/assets/gallery-4.jpg",
+        "alt": "Rooftop terrace view"
+      },
+      {
+        "src": "/src/assets/gallery-5.jpg",
+        "alt": "Social area for travelers"
+      },
+      {
+        "src": "/src/assets/gallery-6.jpg",
+        "alt": "Reception and entrance"
+      }
+    ]
+  },
+  "featured_services_section":{
+    "title":"What Makes Us Special",
+    "subtitle":"We go beyond basic accommodation to create memorable experiences for every traveler"
+  },
+  "featured_services": [
+    {
+      "icon": "Bed",
+      "title": "Comfortable Beds",
+      "description": "Quality mattresses and fresh linens daily"
+    },
+    {
+      "icon": "Car",
+      "title": "Airport Transfer",
+      "description": "Easy transport to and from the airport"
+    },
+    {
+      "icon": "Coffee",
+      "title": "Free Breakfast",
+      "description": "Start your day with a complimentary meal"
+    },
+    {
+      "icon": "Luggage",
+      "title": "Luggage Storage",
+      "description": "Store your bags before check-in or after check-out"
+    }
+  ],
+  "final_cta": {
+    "title": "Ready for Your Adventure?",
+    "description": "Don't wait - secure your spot in our travelers' community today!",
+    "button": {
+      "text": "Book Your Stay Now",
+      "link": "https://wa.me/1234567890?text=Hi!%20I%20want%20to%20book%20a%20room"
+    }
+  }
+}

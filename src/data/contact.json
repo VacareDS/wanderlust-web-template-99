@@ -1,0 +1,147 @@
+{
+  "title": "Get in Touch",
+  "description": "Have questions? We're here to help make your stay perfect!",
+  "contact_info": {
+    "phone": {
+      "number": "+1 (555) 123-4567",
+      "display": "+1 555 123 4567",
+      "available": "24/7"
+    },
+    "whatsapp": {
+      "number": "1234567890", 
+      "link": "https://wa.me/1234567890",
+      "message": "Hi! I have a question about booking"
+    },
+    "email": {
+      "address": "hello@backpackerhostel.com",
+      "response_time": "Within 24 hours"
+    },
+    "address": {
+      "full": "123 Backpacker Street, Adventure City, 12345, Traveler's Paradise",
+      "street": "123 Backpacker Street",
+      "city": "Adventure City", 
+      "postal_code": "12345",
+      "country": "Traveler's Paradise"
+    }
+  },
+  "social_media": [
+    {
+      "platform": "Instagram",
+      "handle": "@backpackerhostel",
+      "url": "https://instagram.com/backpackerhostel",
+      "icon": "Instagram"
+    },
+    {
+      "platform": "Facebook", 
+      "handle": "Backpacker Hostel",
+      "url": "https://facebook.com/backpackerhostel",
+      "icon": "Facebook"
+    },
+    {
+      "platform": "TikTok",
+      "handle": "@backpackerhostel",
+      "url": "https://tiktok.com/@backpackerhostel", 
+      "icon": "TikTok"
+    }
+  ],
+  "booking_platforms": [
+    {
+      "name": "Booking.com",
+      "url": "https://booking.com/backpackerhostel",
+      "icon": "ExternalLink"
+    },
+    {
+      "name": "Hostelworld",
+      "url": "https://hostelworld.com/backpackerhostel",
+      "icon": "ExternalLink"
+    },
+    {
+      "name": "Airbnb",
+      "url": "https://airbnb.com/backpackerhostel",
+      "icon": "ExternalLink"
+    }
+  ],
+  "contact_form": {
+    "enabled": true,
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Your Name",
+        "required": true,
+        "placeholder": "John Doe"
+      },
+      {
+        "name": "email",
+        "type": "email", 
+        "label": "Email Address",
+        "required": true,
+        "placeholder": "john@example.com"
+      },
+      {
+        "name": "phone",
+        "type": "tel",
+        "label": "Phone Number",
+        "required": false,
+        "placeholder": "+1 555 123 4567"
+      },
+      {
+        "name": "subject",
+        "type": "select",
+        "label": "Subject",
+        "required": true,
+        "options": [
+          "General Inquiry",
+          "Booking Question",
+          "Group Booking",
+          "Complaint/Feedback",
+          "Other"
+        ]
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "label": "Message",
+        "required": true,
+        "placeholder": "Tell us how we can help you..."
+      }
+    ],
+    "submit_text": "Send Message",
+    "success_message": "Thanks for your message! We'll get back to you within 24 hours.",
+    "note": "For immediate booking assistance, please contact us via WhatsApp or phone."
+  },
+  "hours": {
+    "reception": "24/7",
+    "check_in": "3:00 PM - 11:00 PM",
+    "check_out": "8:00 AM - 11:00 AM",
+    "late_check_in": "Available with advance notice"
+  },
+  "ui_labels": {
+    "quick_contact_title": "Quick Contact",
+    "whatsapp_label": "WhatsApp",
+    "chat_now_button": "Chat Now",
+    "address_label": "Address",
+    "hours_title": "Hours",
+    "reception_label": "Reception:",
+    "checkin_label": "Check-in:",
+    "checkout_label": "Check-out:",
+    "follow_us_title": "Follow Us",
+    "follow_us_description": "Stay connected with our community",
+    "book_online_title": "Book Online", 
+    "book_online_description": "Reserve through our partners",
+    "contact_form_title": "Send us a Message",
+    "message_sent_title": "Message Sent!",
+    "form_labels": {
+      "name": "Name *",
+      "email": "Email *", 
+      "phone": "Phone",
+      "subject": "Subject *",
+      "message": "Message *"
+    },
+    "form_placeholders": {
+      "subject": "Select a subject",
+      "message": "Tell us how we can help you..."
+    },
+    "sending_text": "Sending..."
+  }
+}
